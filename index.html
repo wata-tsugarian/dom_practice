@@ -6,6 +6,7 @@
       DOM、JavaScriptの練習
     </title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
@@ -14,11 +15,26 @@
       </h1>
     </header>
     <main>
-      <div class="flex items-center justify-center py-5">
-        <button id="header-change-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center">
+      <div class="flex justify-center py-5">
+        <button id="header-change-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
           ヘッダーのテキストを変えるボタン
         </button>
       </div>
+      <section>
+        <div id="card" class="flex items-center justify-center py-5">
+          <div class="w-50 h-100 bg-orange-500 text-center flex items-center justify-center">
+            表
+          </div>
+          <div class="w-50 h-100 bg-gray-300 text-center flex items-center justify-center">
+            裏
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button id="card-rotate-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            カード回転
+          </button>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
