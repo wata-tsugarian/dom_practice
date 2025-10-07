@@ -16,3 +16,9 @@ changeHeaderButton.addEventListener("click", function() {
     changed = false;
   }
 })
+
+const card = document.getElementById("card")
+document.getElementById("card-rotate-button").addEventListener("click", function() {
+  card.classList.add("rotate-y");
+  card.style.animationDelay = 500 + "ms"
+})
